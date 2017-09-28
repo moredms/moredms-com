@@ -1,11 +1,35 @@
 <head>
+  <title>More Dimension</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <meta name="viewport" content="width=device-width, initial-width=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="{{"/assets/materialize.css"}}"/>
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  {% if jekyll.environment == 'production' and site.google_analytics %}
-    {% include google-analytics.html %}
-  {% endif %}
+
+  <!-- Javascripts -->
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="{{"/assets/js/bin/materialize.min.js"}}"></script>
+
+  <!-- Initalisation -->
+  <script>
+
+      $(".button-collapse").sideNav();
+
+      $(document).ready(function() {
+        $('.carousel.carousel-slider').carousel({fullWidth: true, duration: 600});
+        window.setInterval(function(){$('.carousel').carousel('next')}, 9000)
+      });
+
+      $(document).ready(function(){
+        $('.collapsible').collapsible();
+      });
+
+  </script>
+
+
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
 </head>

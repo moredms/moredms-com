@@ -1,10 +1,10 @@
-<header class="site-header" role="banner">
+<!-- <header class="site-header" role="banner">
 
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-  
+
     {% if page_paths %}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -29,4 +29,42 @@
       </nav>
     {% endif %}
   </div>
-</header>
+</header> -->
+
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper grey lighten-3">
+            <div class="container">
+                <a href="#" class="brand-logo hide-on-small-only"><img src="{{"/assets/img/logo_more_dimensions_with_text_bitmap_small_transparent_background.png"}}" height="58px" style="margin: 3px 0 3px 0"></a>
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons mdsorange-text">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a class="dropdown-button mdsorange-text" style="font-weight: bold" href="#!" data-activates="we_dropdown" data-beloworigin="true">Wir</a></li>
+                    <ul id="we_dropdown" class="dropdown-content">
+                        <li><a href="#!">News</a></li>
+                        <li><a href="#!">Referenzen</a></li>
+                        <li><a href="#!">Über uns</a></li>
+                        <li><a href="#!">Unsere Partner</a></li>
+                        <li><a href="contact.html">Kontakt & Impressum</a></li>
+                    </ul>
+                    <li><a class="dropdown-button mdsorange-text" style="font-weight: bold" href="#!" data-activates="offer_dropdown" data-beloworigin="true">bieten</a></li>
+                    <ul id="offer_dropdown" class="dropdown-content">
+                        <li><a href="#!">Veranstaltungsmanagement</a></li>
+                        <li><a href="#!">Facility Management</a></li>
+                        <li><a href="#!">Business Intelligence</a></li>
+                        <li><a href="#!">Hosting</a></li>
+                        <li><a href="#!">Dienstleistungen</a></li>
+                    </ul>
+                    <li><a class="dropdown-button mdsorange-text" style="font-weight: bold" href="#!" data-activates="solutions_dropdown" data-beloworigin="true">Lösungen</a></li>
+                    <ul id="solutions_dropdown" class="dropdown-content">
+                        <li><a href="#!">Facility Management</a></li>
+                        <li><a href="#!">Veranstaltungs-Locations</a></li>
+                        <li><a href="#!">Konzerthäuser</a></li>
+                        <li><a href="#!">Orchester & Ensembles</a></li>
+                        <li><a href="#!">Festivals & Veranstalter</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<script type="text/javascript">$(".dropdown-button").dropdown({hover: true});</script>

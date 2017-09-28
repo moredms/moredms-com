@@ -1,46 +1,50 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
+<footer class="page-footer mdsorange">
+  <div class="container">
+    <div class="row">
+      <div class="col l3 s6">
+        <h5 class="footer-header white-text">Warum wir?</h5>
+        <ul>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Über uns</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Technologie</a></li>
         </ul>
       </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
+      <div class="col l3 s6">
+        <h5 class="footer-header white-text">Zielgruppen</h5>
+        <ul>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Veranstaltungsbetriebe</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Konzerthäuser</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Orchester</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Festivals</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Facillity Management</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Serverhosting</a></li>
         </ul>
       </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
+      <div class="col l3 s6">
+        <h5 class="footer-header white-text">Module</h5>
+        <ul>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Veranstaltungs- und Raummanagement</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Vermietung</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Adress- und Kontaktmanagement</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Marketing-Tools</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Werke, Interpreten, Noten & Instrumente</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Orchestermanagement</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Kalkulation, Budgetierung & Controlling</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Mobile Applications</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Facillity Management</a></li>
+          <li><a class="footer-links grey-text text-lighten-3" href="#!">Serverhosting</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s6">
+        <h5 class="footer-header white-text">Kontakt</h5>
+        <ul>
+          <li><a class="footer-links grey-text text-lighten-3" href="contact.html">Kontaktieren Sie uns</a></li>
+        </ul>
       </div>
     </div>
-
   </div>
-
+  <div class="footer-copyright">
+    <div class="container">
+    &copy; 2017 More Dimensions GmbH
+    </div>
+  </div>
 </footer>
