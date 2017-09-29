@@ -4,14 +4,23 @@
   {% include head.html %}
 
   <body>
+    <!-- Header -->
 
     {% include header.html %}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+    {% include slide_out_nav.html %}
+
+    {% include banner.html %}
+
+    <!-- Teaser -->
+
+    {% include teaser.html %}
+
+    <!-- News -->
+
+    {% include news.html %}
+
+    <!-- Footer -->
 
     {% include footer.html %}
 
