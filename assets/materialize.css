@@ -7402,3 +7402,10 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   right: 0; }
   .teamviewer img {
     width: 64px; }
+
+.teaser p {
+  text-align: justify;
+  font-size: 1.2em; }
+
+.teaser h5 {
+  font-size: 2em; }
