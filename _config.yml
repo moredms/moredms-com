@@ -25,3 +25,9 @@ theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock
+
+#Collections
+collections:
+  teasers:
+    output: true
+    permalink: /teasers/:path.html
