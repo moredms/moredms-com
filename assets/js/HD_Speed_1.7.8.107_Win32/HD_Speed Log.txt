@@ -1,0 +1,60 @@
+﻿[Test Start 09.10.2017 09:34:02]	drive: \\.\E:	start_offset: 0	mode: Read	blocksize: Auto	type: sequential	parallel: 1
+blocksize: 64KB
+result: 19072KB/s	offset: 0% 9536KB
+blocksize: 32KB
+result: 14336KB/s	offset: 0% 16704KB
+blocksize: 64KB
+result: 19200KB/s	offset: 0% 26304KB
+blocksize: 128KB
+result: 17920KB/s	offset: 0% 35264KB
+blocksize: 64KB
+result: 19072KB/s	offset: 0% 44800KB
+blocksize: 128KB
+result: 17920KB/s	offset: 0% 53760KB
+blocksize: 64KB
+result: 18560KB/s	offset: 0% 63040KB
+blocksize: 128KB
+result: 17920KB/s	offset: 0% 72000KB
+blocksize: 64KB
+result: 19072KB/s	offset: 0% 81536KB
+blocksize: 128KB
+result: 19712KB/s	offset: 0% 91392KB
+blocksize: 256KB
+result: 18944KB/s	offset: 0% 100864KB
+result: 18432KB/s	offset: 0% 110080KB
+result: 19456KB/s	offset: 0% 119808KB
+result: 17920KB/s	offset: 0% 128768KB
+blocksize: 128KB
+result: 19200KB/s	offset: 0% 138368KB
+blocksize: 256KB
+result: 18432KB/s	offset: 0% 147584KB
+blocksize: 128KB
+result: 18944KB/s	offset: 1% 157056KB
+blocksize: 256KB
+result: 19968KB/s	offset: 1% 167040KB
+result: 18432KB/s	offset: 1% 176256KB
+result: 18432KB/s	offset: 1% 185472KB
+blocksize: 128KB
+result: 18944KB/s	offset: 1% 194944KB
+blocksize: 256KB
+result: 17920KB/s	offset: 1% 203904KB
+blocksize: 128KB
+result: 19200KB/s	offset: 1% 213504KB
+blocksize: 256KB
+result: 18432KB/s	offset: 1% 222720KB
+blocksize: 128KB
+result: 18688KB/s	offset: 1% 232064KB
+blocksize: 256KB
+result: 17920KB/s	offset: 1% 241024KB
+blocksize: 128KB
+result: 19200KB/s	offset: 1% 250624KB
+blocksize: 256KB
+result: 18432KB/s	offset: 1% 259840KB
+blocksize: 128KB
+result: 18176KB/s	offset: 1% 268928KB
+blocksize: 64KB
+result: 18048KB/s	offset: 1% 277952KB
+blocksize: 128KB
+result: 18944KB/s	offset: 1% 287424KB
+blocksize: 256KB
+[Test Stop 09.10.2017 09:34:17]	errors: 0	average: 18.3 MB
