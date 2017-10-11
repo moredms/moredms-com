@@ -1,17 +1,16 @@
 <div class="carousel carousel-slider center" data-indicators="true">
 
-{% for banner in site.banner %}
+  <a style="position: absolute; left: 20px; top: 50%; transform: translate(-50%, 0); z-index: 999; font-size: 30px" onclick="$('.carousel').carousel('next');"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_left</i></a>
+  <a style="position: absolute; right: 0px; top: 50%; transform: translate(-50%, 0); z-index: 999; font-size: 30px" href="#"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_right</i></a>
 
+{% for banner in site.banner %}
   <div class="carousel-item white-text" href="#one!">
-    <div class="banner-content" style="margin: 0 0 0 50px; background-color: #000">
-      <div class="col s12">
-        <h2 style="position: absolute; margin: 95px 0 0 20px; z-index: 9999">{{ banner.banner-headline }}</h2>
-        <p style="position: absolute; margin: 110px 0 0 0; width: 500px; text-align: justify; z-index: 99999; padding: 20px" class="white-text">{{ banner.banner-text }}</p>
-        <div class="quoteWidth" style="background-color: #000; height: 250px; width: 500px; position: absolute; margin-top: 80px; z-index: 3; opacity: 0.8; border: 1px solid #fff; box-shadow: 0 0 50px #000;"></div>
-        <script type="text/javascript">
-          $("quoteWidth").width();
-          console.log(quoteWidth);
-        </script>
+    <div class="banner-content" style="padding: 0 0 0 20px; background-color: #000">
+      <div class="col s12 hide-on-med-and-down">
+        <div class="quoteWidth" style="border-radius: 20px; padding: 0 10px 10px 0px; background-color: #000; min-height: 250px; width: 500px; position: absolute; z-index: 3; opacity: 0.8; border: 1px solid #fff; box-shadow: 0 0 50px #000; left: 50px; top: 50%; transform: translate(0, -50%);">
+          <h2 style="z-index: 9999">{{ banner.banner-headline }}</h2>
+          <p>{{ banner.banner-text }}</p>
+        </div>
       </div>
     </div>
     <img src="{{ site.baseurl }}{% include directory url=banner.url %}{{ banner.images[0].url }}" alt="">

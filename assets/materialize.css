@@ -7402,3 +7402,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   right: 0; }
   .teamviewer img {
     width: 64px; }
+
+.custom-nav {
+  height: 100px; }

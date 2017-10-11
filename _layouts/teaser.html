@@ -3,22 +3,48 @@ layout: default
 title: teaser
 ---
 
-<div class="grey lighten-4 hide-on-med-and-down">
+<div class="grey lighten-4 hide-on-small-only">
   <div class="row">
     <div class="container" style="padding-top: 50px">
 
       {% for teaser in site.teasers %}
 
-        <div class="col s4">
+        <div class="col s4" style="min-height: 450px">
           <div class="row">
             <div class="col s12 center">
-              <img src="{{ site.baseurl }}{% include directory url=teaser.url %}{{ teaser.images[0].url }}" alt="lol" style="max-width: 90px">
+              <img src="{{ site.baseurl }}{% include directory url=teaser.url %}{{ teaser.images[0].url }}" alt="" style="max-width: 90px">
             </div>
             <div class="col s12" style="text-align: justify">
               <h5 class="center">{{ teaser.name }}</h5>
             </div>
             <div class="col s12" style="text-align: justify">
-              <p>{{ teaser.text }}</p>
+              <p id="teaser_text">{{ teaser.text }}</a></p>
+            </div>
+          </div>
+        </div>
+
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+
+<div class="grey lighten-4 show-on-small">
+  <div class="row">
+    <div class="container" style="padding-top: 50px">
+
+      {% for teaser in site.teasers %}
+
+        <div class="col s12" style="min-height: 450px">
+          <div class="row">
+            <div class="col s12 center">
+              <img src="{{ site.baseurl }}{% include directory url=teaser.url %}{{ teaser.images[0].url }}" alt="" style="max-width: 90px">
+            </div>
+            <div class="col s12" style="text-align: justify">
+              <h5 class="center">{{ teaser.name }}</h5>
+            </div>
+            <div class="col s12" style="text-align: justify">
+              <p id="teaser_text">{{ teaser.text }}</a></p>
             </div>
           </div>
         </div>
