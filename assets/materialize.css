@@ -7405,3 +7405,29 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .custom-nav {
   height: 100px; }
+
+.teamviewer {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  height: 64px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  .teamviewer:hover {
+    background-color: #1F79E9; }
+
+footer .collapsible {
+  color: #000;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  footer .collapsible .collapsible-header {
+    background-color: #FB5F2B;
+    border-bottom: 2px solid #fff;
+    padding: 0; }
+  footer .collapsible .collapsible-body {
+    padding: 0;
+    border: 0; }
+    footer .collapsible .collapsible-body li {
+      padding: 0.5rem; }
