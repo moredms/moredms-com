@@ -1,7 +1,7 @@
 <div class="carousel carousel-slider center hide-on-small-only" data-indicators="true" >
 
-  <a style="position: absolute; left: 20px; top: 50%; transform: translate(-50%, 0); z-index: 999; font-size: 30px" onclick="$('.carousel').carousel('next');"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_left</i></a>
-  <a style="position: absolute; right: 0px; top: 50%; transform: translate(-50%, 0); z-index: 999; font-size: 30px" href="#"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_right</i></a>
+  <a style="position: absolute; left: 20px; top: 50%; transform: translate(-50%, 0); z-index: 999; font-size: 30px; cursor: pointer;" onclick="$('.carousel').carousel('prev');"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_left</i></a>
+  <a style="position: absolute; right: 0px; top: 50%; transform: translate(-50%, 0); z-index: 999; font-size: 30px; cursor: pointer;" onclick="$('.carousel').carousel('next');"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_right</i></a>
 
 {% for banner in site.banner %}
 
@@ -25,6 +25,9 @@
 
   <!-- <a style="position: absolute; left: 20px; top: 50%; transform: translate(-50%, 0); z-index: 999; font-size: 30px" onclick="$('.carousel').carousel('next');"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_left</i></a>
   <a style="position: absolute; right: 0px; top: 50%; transform: translate(-50%, 0); z-index: 999; font-size: 30px" href="#"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_right</i></a> -->
+
+<a style="position: absolute; left: 60px; top: 40%; transform: translate(-50%, 0); z-index: 999; font-size: 30px; cursor: pointer;" onclick="$('.carousel').carousel('prev');"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_left</i></a>
+<a style="position: absolute; right: 0px; top: 40%; transform: translate(-50%, 0); z-index: 999; font-size: 30px; cursor: pointer;" onclick="$('.carousel').carousel('next');"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_right</i></a>
 
 {% for banner in site.banner %}
 
