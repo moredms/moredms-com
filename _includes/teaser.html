@@ -1,10 +1,44 @@
-<div class="grey lighten-4 hide-on-med-and-down">
+<div class="main" style="z-index: 0">
+  <div class="grey lighten-4 hide-on-med-and-down" style="padding-bottom: 50px;">
+
+    <div class="container">
+      <div class="row">
+
+        {% for teaser in site.teasers %}
+
+        <div class="teasers">
+
+          <div class="col s3 offset-s1" style="min-height: 650px; background-color: #fff; padding-top: 50px; margin-top: 50px; box-shadow: 0px 0px 15px #494949; font-size: 1.1rem;">
+            <div class="col s12 center">
+              <img src="{{ site.baseurl }}{% include directory url=teaser.url %}{{ teaser.images[0].url }}" alt="" style="max-width: 90px">
+            </div>
+            <div class="col s12" style="text-align: justify">
+              <h5 class="center">{{ teaser.name }}</h5>
+            </div>
+            <div class="col s12" style="text-align: left">
+              <p id="teaser_text">{{ teaser.text }}</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        {% endfor %}
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+<!-- <div class="grey lighten-4 hide-on-med-and-down">
   <div class="row">
     <div class="container" style="padding-top: 50px">
 
       {% for teaser in site.teasers %}
 
-        <div class="col s4" style="min-height: 450px">
+        <div class="col s3 offset-s1" style="min-height: 580px; margin-bottom: 30px; padding: 50px 20px 0 20px;">
           <div class="row">
             <div class="col s12 center">
               <img src="{{ site.baseurl }}{% include directory url=teaser.url %}{{ teaser.images[0].url }}" alt="" style="max-width: 90px">
@@ -48,4 +82,4 @@
 
     </div>
   </div>
-</div>
+</div> -->

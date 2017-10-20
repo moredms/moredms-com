@@ -31,7 +31,7 @@ collections:
   teasers:
     output: true
     permalink: /teasers/:path.html
-
+    
   news:
     output: true
     permalink: /news/:path.html

@@ -1,23 +1,26 @@
 ---
-layout: default
-title: Banner
+layout: banner
+title: banner
 ---
 
-<div class="carousel carousel-slider center" data-indicators="true">
+  <header id="all_banner">
+    <div class="carousel carousel-slider center" data-indicators="true">
 
-{% for banner in site.banner %}
+      <a style="position: absolute; left: 20px; top: 50%; transform: translate(-50%, 0); z-index: 999; font-size: 30px; cursor: pointer;" onclick="$('.carousel').carousel('prev');"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_left</i></a>
+      <a style="position: absolute; right: 0px; top: 50%; transform: translate(-50%, 0); z-index: 999; font-size: 30px; cursor: pointer;" onclick="$('.carousel').carousel('next');"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_right</i></a>
 
-  <div class="carousel-item white-text" href="#one!">
-    <div class="banner-content" style="margin: 0 0 0 50px; background-color: #67809F">
-      <div class="col s12">
-        <h2 style="position: absolute; margin: 95px 0 0 20px; z-index: 9999">banner.banner-headline</h2>
-        <p style="position: absolute; margin: 110px 0 0 0; width: 500px; text-align: justify; z-index: 99999; padding: 20px" class="white-text">banner.banner-text</p>
-        <div style="background-color: #95A5A6; height: 250px; width: 500px; position: absolute; margin-top: 80px; z-index: 3; opacity: 0.8; border: 1px solid #fff; box-shadow: 0 0 50px #67809F;"></div>
-      </div>
+      {% for banner in site.banner %}
+
+        <div class="carousel-item white-text" href="#one!">
+          <img src="{{ site.baseurl }}{% include directory url=banner.url %}{{ banner.images[0].url }}" alt="">
+        </div>
+
+      {% endfor %}
+
     </div>
-    <img src="{{ site.baseurl }}{% include directory url=banner.url %}{{ banner.images[0].url }}" alt="">
-  </div>
 
-{% endfor %}
+    <script type="text/javascript">
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
+    </script>
 
-</div>
+  </header>
