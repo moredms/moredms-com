@@ -1,7 +1,8 @@
 <div class="main" style="z-index: 0">
-  <div class="grey lighten-4 hide-on-med-and-down" style="padding-bottom: 50px;">
+  <div class="grey lighten-4" style="padding-bottom: 50px;">
 
-    <div class="container">
+
+    <div class="container hide-on-med-and-down">
       <div class="row">
 
         {% for teaser in site.teasers %}
@@ -26,6 +27,32 @@
 
       </div>
     </div>
+
+    <div class="row hide-on-large-only">
+
+        {% for teaser in site.teasers %}
+
+        <div class="teasers">
+
+          <div class="col s12" style="background-color: #fff; padding-top: 50px; margin-top: 50px; font-size: 1.1rem;">
+            <div class="col s12 center">
+              <img src="{{ site.baseurl }}{% include directory url=teaser.url %}{{ teaser.images[0].url }}" alt="" style="max-width: 90px">
+            </div>
+            <div class="col s12" style="text-align: justify">
+              <h5 class="center">{{ teaser.name }}</h5>
+            </div>
+            <div class="col s12" style="text-align: left">
+              <p id="teaser_text">{{ teaser.text }}</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+
 
   </div>
 

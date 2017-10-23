@@ -1,34 +1,56 @@
-  <div class="container white">
-    <div class="row">
+<style media="screen">
+  .parallax-container {
+    height: 550px;
+  }
+</style>
 
-      <h2 class="center">Neuigkeiten</h2>
+<div class="parallax-container">
+  <div class="parallax"><img src="banner_wien.png" alt=""></div>
+</div>
 
-      <hr style="margin-bottom: 30px">
+<div class="container" style="position: relative;">
+  <div class="row">
 
-      <div class="carousel carousel-slider" style="height: 400px; margin-bottom: 50px;">
+    <h2 class="center">Neuigkeiten</h2>
 
-        {% for news in site.news %}
+    <hr style="margin-bottom: 30px">
 
-          <div class="carousel-item" href="#one!">
+    <div class="col s12">
+
+      <div class="container">
+        <div class="row">
+
+          {% for news in site.news %}
+
+          <div class="col 12">
             <div class="row">
-              <div class="col s6">
-                <img class="left" src="{{ site.baseurl }}{% include directory url=news.url %}{{ news.images[0].url }}" alt="" style="max-width: 100%; height: 400px">
+
+              <div class="col s12">
+                <img src="_news/article_3/wkh_wiener_konzerthaus_outside1_small.jpg" alt="">
               </div>
-              <div class="col s6">
-                <div class="col s12">
-                  <h5>{{ news.header }}</h5>
-                </div>
-                <div class="col s12">
-                  <p>{{ news.news-text }}</p>
-                </div>
+
+              <div class="col s12" style="border: 2px solid #666">
+                <h5>{{ news.header }}</h5>
+                <p>{{ news.news-text }}</p>
               </div>
+
             </div>
           </div>
 
-        {% endfor %}
+          {% endfor %}
 
+
+        </div>
       </div>
-    </div>
-  </div>
 
+    </div>
+
+  </div>
 </div>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+</script>
