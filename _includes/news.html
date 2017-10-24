@@ -2,9 +2,15 @@
   .parallax-container {
     height: 550px;
   }
+
+  @media (max-width: 586px) {
+    .parallax-container {
+      height: 300px;
+    }
+  }
 </style>
 
-<div class="parallax-container">
+<div class="parallax-container" style="z-index: 0">
   <div class="parallax"><img src="banner_wien.png" alt=""></div>
 </div>
 
@@ -22,14 +28,14 @@
 
           {% for news in site.news %}
 
-          <div class="col 12">
+          <div class="col 12" style="margin-top: 50px; box-shadow: 0 0 50px #666; padding-top: 10px;">
             <div class="row">
 
               <div class="col s12">
-                <img src="_news/article_3/wkh_wiener_konzerthaus_outside1_small.jpg" alt="">
+                <img src="banner_wien.png" alt="" style="width: 100%;">
               </div>
 
-              <div class="col s12" style="border: 2px solid #666">
+              <div class="col s12">
                 <h5>{{ news.header }}</h5>
                 <p>{{ news.news-text }}</p>
               </div>
