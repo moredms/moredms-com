@@ -1,20 +1,20 @@
   <header class="all_banner hide-on-med-and-down">
 
-    <div class="logo-bg" style="background-color: white; height: 20%; width: 20%; position; fixed; top: 0; right: 0;">
-      <img src="{{"assets/img/logo-mds-big.png"}}" alt="" style="position: absolute; width: 25%; right: 0px; top: 0px; z-index: 999999; background-color: rgba(255,255,255,0.6); padding: 10px;">
+    <div class="logo-bg">
+      <img src="{{"assets/img/logo-mds-big.png"}}" alt="">
     </div>
 
     <div class="carousel carousel-slider center" data-indicators="true">
 
-      <a style="position: absolute; left: 100px; top: 50%; transform: translate(-50%, 0); z-index: 999; font-size: 30px; cursor: pointer;" onclick="$('.carousel').carousel('prev');"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_left</i></a>
-      <a style="position: absolute; right: 30px; top: 50%; transform: translate(-50%, 0); z-index: 999; font-size: 30px; cursor: pointer;" onclick="$('.carousel').carousel('next');"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_right</i></a>
+      <a class="slider-left-arrow" onclick="$('.carousel').carousel('prev');"><i class="material-icons white-text">keyboard_arrow_left</i></a>
+      <a class="slider-right-arrow" onclick="$('.carousel').carousel('next');"><i class="material-icons white-text">keyboard_arrow_right</i></a>
 
       {% for banner in site.banner %}
 
-        <div class="carousel-item white-text" href="#one!" style="text-align: left;">
-          <div class="quoteWidth" style="border-radius: 20px; padding: 0 10px 10px 0px; background-color: #000; min-height: 250px; max-width: 550px; position: absolute; z-index: 3; opacity: 0.8; border: 1px solid #fff; box-shadow: 0 0 50px #000; left: 200px; top: 50%; transform: translate(0, -50%);">
-              <h2 style="z-index: 9999">{{ banner.banner-headline }}</h2>
-              <p style="padding: 10px">{{ banner.banner-text }}</p>
+        <div class="carousel-item white-text" href="#one!">
+          <div class="quoteWidth">
+              <h2>{{ banner.banner-headline }}</h2>
+              <p>{{ banner.banner-text }}</p>
             </div>
           <img src="{{ site.baseurl }}{% include directory url=banner.url %}{{ banner.images[0].url }}" alt="">
         </div>
@@ -27,4 +27,8 @@
       $('.carousel.carousel-slider').carousel({fullWidth: true});
     </script>
 
+  </header>
+
+  <header class="hide-on-large-only">
+    <img src="{{"/assets/img/logo-mds-big.png"}}" alt="" style="width: 100%;">
   </header>

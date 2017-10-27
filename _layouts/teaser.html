@@ -14,10 +14,10 @@ title: teaser
             <div class="col s12 center">
               <img src="{{ site.baseurl }}{% include directory url=teaser.url %}{{ teaser.images[0].url }}" alt="" style="max-width: 90px">
             </div>
-            <div class="col s12" style="text-align: justify">
+            <div class="col s12">
               <h5 class="center">{{ teaser.name }}</h5>
             </div>
-            <div class="col s12" style="text-align: justify">
+            <div class="col s12">
               <p id="teaser_text">{{ teaser.text }}</a></p>
             </div>
           </div>
@@ -28,6 +28,25 @@ title: teaser
     </div>
   </div>
 </div>
+<!--
+<script type="text/javascript">
+$(document).ready(function () {
+
+var cutCount = 1;
+
+$("#teaser_text p").each(function (i) {
+i++;
+if (i == cutCount) {
+$(this).append(' <a hread="javascript:void(1)" onclick="$(\'#teaser_text p\').show(); $(this).hide()">Read More </a>')
+}
+if (i > cutCount) {
+$(this).hide();
+}
+});
+
+});
+
+</script> -->
 
 <div class="grey lighten-4 show-on-small">
   <div class="row">

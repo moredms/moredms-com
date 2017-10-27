@@ -3,11 +3,11 @@ layout: banner
 title: banner
 ---
 
-  <header id="all_banner">
+  <header id="all_banner" class="hide-on-med-and-down">
     <div class="carousel carousel-slider center" data-indicators="true">
 
-      <a style="position: absolute; left: 20px; top: 50%; transform: translate(-50%, 0); z-index: 999; font-size: 30px; cursor: pointer;" onclick="$('.carousel').carousel('prev');"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_left</i></a>
-      <a style="position: absolute; right: 0px; top: 50%; transform: translate(-50%, 0); z-index: 999; font-size: 30px; cursor: pointer;" onclick="$('.carousel').carousel('next');"><i style="font-size: 70px" class="material-icons white-text">keyboard_arrow_right</i></a>
+      <a onclick="$('.carousel').carousel('prev');"><i class="material-icons white-text">keyboard_arrow_left</i></a>
+      <a onclick="$('.carousel').carousel('next');"><i class="material-icons white-text">keyboard_arrow_right</i></a>
 
       {% for banner in site.banner %}
 

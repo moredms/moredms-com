@@ -1,45 +1,29 @@
-<style media="screen">
-  .parallax-container {
-    height: 550px;
-  }
-
-  @media (max-width: 586px) {
-    .parallax-container {
-      height: 300px;
-    }
-  }
-</style>
-
 <div class="parallax-container" style="z-index: 0">
   <div class="parallax"><img src="banner_wien.png" alt=""></div>
 </div>
 
-<div class="container" style="position: relative;">
+<div class="container news-container">
   <div class="row">
 
     <h2 class="center">Neuigkeiten</h2>
 
-    <hr style="margin-bottom: 30px">
+    <hr>
 
     <div class="col s12">
-
       <div class="container">
         <div class="row">
 
           {% for news in site.news %}
 
-          <div class="col 12" style="margin-top: 50px; box-shadow: 0 0 50px #666; padding-top: 10px;">
+          <div class="col 12 news-header">
             <div class="row">
-
               <div class="col s12">
-                <img src="banner_wien.png" alt="" style="width: 100%;">
+                <img src="banner_wien.png" alt="">
               </div>
-
               <div class="col s12">
                 <h5>{{ news.header }}</h5>
                 <p>{{ news.news-text }}</p>
               </div>
-
             </div>
           </div>
 
@@ -48,9 +32,8 @@
 
         </div>
       </div>
-
     </div>
-
+    
   </div>
 </div>
 

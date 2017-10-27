@@ -23,6 +23,74 @@
     background-color: #fff
     color: #F66728
 
+// Banner
+.logo-bg
+  background-color: white
+  height: 20%
+  width: 20%
+  top: 0
+  right: 0
+
+  img
+    position: absolute
+    width: 25%
+    right: 0px
+    top: 0px
+    z-index: 999999
+    background-color: rgba(255,255,255,0.6)
+    padding: 10px
+
+.carousel
+
+  .slider-left-arrow
+    position: absolute
+    left: 100px
+    top: 50%
+    transform: translate(-50%, 0)
+    z-index: 999
+    font-size: 30px
+    cursor: pointer
+
+    i
+      font-size: 70px
+
+  .slider-right-arrow
+    position: absolute
+    right: 30px
+    top: 50%
+    transform: translate(-50%, 0)
+    z-index: 999
+    font-size: 30px
+    cursor: pointer
+
+    i
+      font-size: 70px
+
+.carousel-item
+  text-align: left
+
+  .quoteWidth
+    border-radius: 20px
+    padding: 0 10px 10px 0px
+    background-color: #000
+    min-height: 250px
+    max-width: 550px
+    position: absolute
+    z-index: 3
+    opacity: 0.8
+    border: 1px solid #fff
+    box-shadow: 0 0 50px #000
+    left: 200px
+    top: 50%
+    transform: translate(0, -50%)
+
+    h2
+      z-index: 9999
+
+    p
+      padding: 10px
+
+
 // Teamviewer
 .teamviewer
   position: fixed
@@ -39,7 +107,7 @@
 // teamviewer
 
 .teamviewer
-  position: fixed
+  position: absolute
   top: 0px
   right: 0
   height: 64px
@@ -48,11 +116,93 @@
   &:hover
     background-color: #1F79E9
 
-// Responsive Footer
+// Sticky Nav
+.sticky_navbar
+  position: fixed
+  width: 100%
+  top: 0
+
+.mds-bold-text
+  font-weight: bold
+
+.mds-link
+  color: #F66728
+
+// Slide out nav
+#slide-out
+
+  li
+
+    img
+      height: 90px
+      position: absolute
+      left: 50%
+      transform: translate(-50%, 0)
+      top: 20px
+
+.main-nav
+  .nav-wrapper
+    .container
+      .brand-logo
+        img
+          height: 50px
+          margin: 7px 0 7px 0
+
+    ul
+      li
+        .dropdown-button
+          font-weight: bold
+          font-size: 20px
+
+// Teaser
+.main
+  z-index: 0
+
+  .grey
+    padding-bottom: 50px
+    box-shadow: 0 0 20px #666
+    z-index: 999
+
+.teasers
+  .s3
+    min-height: 650px
+    background-color: #fff
+    box-shadow: 0 0 15px #494949
+    font-size: 1.1rem
+    padding-top: 50px
+    margin-top: 50px
+
+    img
+      width: 90px
+
+// Parallax & News
+.parallax-container
+  height: 550px
+
+@media (max-width: 586px)
+  .parallax-container
+    height: 300px
+
+.news-container
+  position: relative
+
+  .row
+    hr
+      margin-bottom: 30px
+
+  .news-header
+    margin-top: 50px
+    box-shadow: 0 0 50px #666
+    padding-top: 10px
+
+    .s12
+      img
+        width: 100%
+
+// Footer
 footer
 
   .collapsible
-    // background-color: #FB5F2B
     color: #000
     border: 0
     box-shadow: none
@@ -68,19 +218,3 @@ footer
 
       li
         padding: 0.5rem
-
-// .main,
-// .news,
-// .main-nav
-//   position: relative
-
-.sticky_navbar
-  position: fixed
-  width: 100%
-  top: 0
-
-.mds-bold-text
-  font-weight: bold
-
-.mds-link
-  color: #F66728
